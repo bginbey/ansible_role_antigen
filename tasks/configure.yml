@@ -89,6 +89,7 @@
     path: '~/.zshrc'
     line: 'source ~/.antigenrc'
     create: yes
+    insertbefore: BOF
     mode: 'u=rw,go=r'
   when: (item.antigen_libraries is defined) or (item.antigen_theme is defined) or (item.antigen_bundles is defined)
   with_items: '{{ users }}'
